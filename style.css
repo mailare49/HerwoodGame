@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*.sheet-banner {
+    background-repeat: no-repeat;
+    background-size: 70%;
+    float:right;
+    background-image:url(https://i.imgur.com/kyJ3DjL.png);
+} */
+
+/*sheet size*/
+.sheet-charsheet-size{
+    margin: 0px;
+	padding: 0px;
+	width: 1150px;
+}
+
+/*One column cells*/
+input[type="text"].sheet-cell-name-1col{
+    background-color: #6D9EEB;
+    border-color: black;
+    pointer-events:none;
+    margin-bottom: 1px;
+    font-family: 'Tinos', 'Times New Roman', Times, serif;
+}
+
+/*Two columns cells*/
+input[type="text"].sheet-cell-name-2col{
+    background-color: #6D9EEB;
+    border-color: black;
+    width: 25%;
+    pointer-events:none;
+    margin-bottom: 1px;
+    font-family: 'Tinos', 'Times New Roman', Times, serif;
+}
+
+input[type="text"].sheet-cell-content-2col{
+    background-color: #CFE2F3;
+    border-color: black;
+    width: 74%;
+    margin-bottom: 1px;
+    font-family: 'Tinos', 'Times New Roman', Times, serif;
+}
+
+input[type="number"].sheet-cell-content-2col{
+    background-color: #CFE2F3;
+    border-color: black;
+    width: 74%;
+    margin-bottom: 1px;
+    font-family: 'Tinos', 'Times New Roman', Times, serif;
+}
+
+/*textbox*/
+.sheet-textbox {
+    background: transparent;
+    border-color: black;
+    box-shadow: none;
+    color: black;
+    width: 165px;
+    font-family: 'Tinos', 'Times New Roman', Times, serif;
+}
+
+.sheet-textbox[type="number"] {
+    text-align: center;
+    background: transparent;
+    border-color: black;
+    box-shadow: none;
+    width: 100%;
+    color: black;
+    font-family: 'Tinos', 'Times New Roman', Times, serif;
+}
+
+/*title of characteristics reapeating field*/
+.sheet-characteristics-title
+{
+    margin-left:5px;
+    font-family: 'Tinos', 'Times New Roman', Times, serif;
+}
+
+/*titles enwrapper*/
+.sheet-dark-row
+{
+    color:black;
+}
