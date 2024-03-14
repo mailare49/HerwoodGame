@@ -1,104 +1,101 @@
-<div class="charsheet-size">
+<div class="charsheet-size" id="charSize">
 <!--Beginning of character sheet-->
 	<!--Beginning of character description-->
 	<div id="character_description">
-		<div class='sheet-2colrow'>
+		<div class="sheet-2colrow" id="charDesc_2colrow">
 			<!--Left column-->
-			<div class="sheet-col" style="margin-right: 0px; width: 573px;">
-				<input type="text" class="cell-name-2col" value="Character Name"/>
+			<div class="sheet-col" style="margin-right: 0px; width: 573px;" id="characterDesc_2colrow_col1">
+				<input type="text" class="cell-name-2col" id="name_title" value="Character Name"/>
 				<input type="text" class="cell-content-2col" name="attr_CharacterName"/><br>
-				<input type="text" class="cell-name-2col" value="Storyteller Name"/>
-				<input type="text" class="cell-content-2col" name="attr_PlayerName"/><br>
-				<input type="text" class="cell-name-2col" value="Character Description"/>
+				<input type="text" class="cell-name-2col" id="storyteller_title" value="Storyteller Name"/>
+				<input type="text" class="cell-content-2col" name="attr_StorytellerName"/><br>
+				<input type="text" class="cell-name-2col" id="charDesc_title" value="Character Description"/>
 				<input type="text" class="cell-content-2col" name="attr_CharacterDescription"/><br>
-				<input type="text" class="cell-name-2col" value="Starting Level"/>
+				<input type="text" class="cell-name-2col" id="startLvl_title" value="Starting Level"/>
 				<input type="text" class="cell-content-2col" name="attr_StartingLvl"/><br>
-				<input type="text" class="cell-name-2col" value="Starting Power"/>
+				<input type="text" class="cell-name-2col" id="startPwr_title" value="Starting Power"/>
 				<input type="text" class="cell-content-2col" name="attr_StartingPwr"/><br>
-				<input type="text" class="cell-name-2col" value="Inspiration"/>
+				<input type="text" class="cell-name-2col" id="inspiration_title" value="Inspiration"/>
 				<input type="text" class="cell-content-2col" name="attr_Inspiration"/>
 			</div>
 			<!--Right column-->
-			<div class="sheet-col" style="margin-left: 0px; width: 573px;">
-				<input type="text" class="cell-name-2col" value="Character Backstory"/>
+			<div class="sheet-col" style="margin-left: 0px; width: 573px;" id="characterDesc_2colrow_col2">
+				<input type="text" class="cell-name-2col" id="charStory_title" value="Character Backstory"/>
 				<input type="text" class="cell-content-2col" name="attr_CharacterBackstory"/><br>
-				<input type="text" class="cell-name-2col" value="Character Personality"/>
+				<input type="text" class="cell-name-2col" id="charPersonality_title" value="Character Personality"/>
 				<input type="text" class="cell-content-2col" name="attr_CharacterPersonality"/><br>
-				<input type="text" class="cell-name-2col" value="Character Appearance"/>
+				<input type="text" class="cell-name-2col" id="charAppearance_title" value="Character Appearance"/>
 				<input type="text" class="cell-content-2col" name="attr_CharacterAppearance"/><br>
-				<input type="text" class="cell-name-2col" value="Current Level"/>
+				<input type="text" class="cell-name-2col" id="currentLvl_title" value="Current Level"/>
 				<input type="number" class="cell-content-2col" name="attr_CurrentLvl" readonly="readonly"/><br> <!--Total value of Level-->
-				<input type="text" class="cell-name-2col" value="Current Maximum Power"/>
-				<input type="text" class="cell-content-2col" name="attr_CurrentMaxPwr"/><br>
-				<input type="text" class="cell-name-2col" value="Specific Attempts"/>
+				<input type="text" class="cell-name-2col" id="currentMaxPwr_title" value="Current Maximum Power"/> 
+				<input type="number" class="cell-content-2col" name="attr_CurrentMaxPwr" readonly="readonly"/><br> <!--Highest Power value-->
+				<input type="text" class="cell-name-2col" id="specificAttempts_title" value="Specific Attempts"/>
 				<input type="text" class="cell-content-2col" name="attr_SpecAttempts"/>
 			</div>
 		</div>
-		<!--End of character description-->
 		<div id="attempts_and_value_chart">
-			<input type="text" class="cell-name-1col" style="width: 185px;" value="Types of Attempts"/> <!--Type of attempts-->
-			<input type="text" class="cell-name-1col" style="width: 959px;" value="Use, Oppose, Know, Hold, Move, React, Assist, Repeat, Recall, Make and Communicate"/><br> <!--Type of attempts-->
-			<input type="text" class="cell-name-1col" style="height: 197px;" value="Value Chart"/>
-			<img src="https://nsm09.casimages.com/img/2024/01/21//24012111145126049318341422.png"/> <!--Image of value chart-->
+			<input type="text" class="cell-name-1col" style="width: 209px;" id="typeAttempts_title" value="Types of Attempts"/>
+			<input type="text" class="cell-name-1col" style="width: 935px;" id="typeAttemps_content" value="Use, Oppose, Know, Hold, Move, React, Assist, Repeat, Recall, Make and Communicate"/><br> <!--Type of attempts-->
+			<input type="text" class="cell-name-1col" style="height: 197px;"id="valueChart_title" value="Value Chart"/>
+			<img id="valueChart_content" src="https://nsm09.casimages.com/img/2024/01/21//24012111145126049318341422.png"/> <!--Image of value chart-->
 		</div>
 	</div>
+	<!--End of character description-->
+
 	<!--Beginning of characteristics table-->
 	<div id="characteristics_table">
 		<!--Name of columns-->
 		<div class="dark-row" style="font-size:15px;line-height:25px; margin-bottom: 2px;">
-			<div class='sheet-2colrow'>
+			<div class="sheet-2colrow" id="characteristic_table">
 				<!--Left column-->
-				<div class="sheet-col" style="background-color: #93C47D; width: 650px; margin-right: 0px;">
-					<span class="characteristics-title" style="margin-left: 75px;">Name</span>
-					<span class="characteristics-title" style="margin-left: 95px;">Power</span>
-					<span class="characteristics-title" style="margin-left: 21px;">Proficiency</span>
-					<span class="characteristics-title" style="margin-left: 19px;">Control</span>
-					<span class="characteristics-title" style="margin-left: 20px;">Mass</span>
-					<span class="characteristics-title">Length</span>
-					<span class="characteristics-title">Width</span>
-					<span class="characteristics-title" style="margin-left: 7px;">Level</span>
+				<div class="sheet-col" style="background-color: #93C47D; width: 650px; margin-right: 0px;" id="characteristic_table_col1">
+					<span id="charName_title" class="characteristics-title" style="margin-left: 75px;">Name</span>
+					<span id="charProf_title" class="characteristics-title" style="margin-left: 160px;">Proficiency</span>
+					<span id="charPwr_title" class="characteristics-title" style="margin-left: 30px;">Power</span>
+					<span id="charMass_title" class="characteristics-title" style="margin-left: 23px;">Mass</span>
+					<span id="charLength_title" class="characteristics-title" style="margin-left: 7px;">Length</span>
+					<span id="charWidth_title" class="characteristics-title" style="margin-left: 8px;">Width</span>
+					<span id="charLvl_title" class="characteristics-title" style="margin-left: 9px;">Level</span>
 				</div>
 				<!--Right column-->
-				<div class="sheet-col" style="background-color: #FFD966; width: 492px; margin-left: 0px; margin-right: 0px;">
-					<span class="characteristics-title">Quantity</span>
-					<span class="characteristics-title">Damage</span>
-					<span class="characteristics-title">Complexity</span>
-					<span class="characteristics-title" style="margin-left: 20px;">Position</span>
-					<span class="characteristics-title" style="margin-left: 73px;">Description</span>
+				<div class="sheet-col" style="background-color: #FFD966; width: 492px; margin-left: 0px; margin-right: 0px;" id="characteristic_table_col2">
+					<span id="charQty_title" class="characteristics-title">Quantity</span>
+					<span id="charDmg_title" class="characteristics-title">Damage</span>
+					<span id="charPos_title" class="characteristics-title" style="margin-left: 20px;">Position</span>
+					<span id="charDesc_title" class="characteristics-title" style="margin-left: 125px;">Description</span>
 				</div>
 			</div>
 		</div>
 		<!--Repeating section of characteristics-->
-		<fieldset class="repeating_characteristic">
+		<fieldset class="repeating_characteristic" id="characteric_repeatingField">
 			<div class="dark-row" style="margin-bottom: 2px;">
-				<div class='sheet-2colrow'>
+				<div class="sheet-2colrow" id="characteric_repeatingField_2colrow">
 					<!--Left column-->
-					<div class="sheet-col" style="background-color: #B6D7A8; width: 650px; margin-right: 0px;">
-						<input class="textbox" type="text" name="attr_CharacteristicName" value="Name" style="margin-left: 10px;"/>
-						<button type="roll" title="PowerRoll" name="roll_CharacteristicPower" style="margin-left: 15px;" value="&{template:default} {{name=@{CharacterName} - @{CharacteristicName&#125; }} {{Power=[[1d@{CharacteristicPower}]]}}"></button>
-						<input class="textbox" type="number" name="attr_CharacteristicPower" value="0"/>
-						<button type="roll" title="ControlRoll" name="roll_CharacteristicProficiency" style="margin-left: 10px;" value="&{template:default} {{name=@{CharacterName} - @{CharacteristicName&#125; }} {{Proficiency=[[1d@{CharacteristicProficiency}]]}}"></button>
-						<input class="textbox" type="number" name="attr_CharacteristicProficiency" value="0" style="margin-left: 0px;"/>
-						<button type="roll" title="ControlRoll" name="roll_CharacteristicControl" style="margin-left: 5px;" value="&{template:default} {{name=@{CharacterName} - @{CharacteristicName&#125; }} {{Control=[[1d@{CharacteristicControl}]]}}"></button>
-						<input class="textbox" type="number" name="attr_CharacteristicControl" value="0"/>
+					<div class="sheet-col" style="background-color: #B6D7A8; width: 650px; margin-right: 0px;" id="characteric_repeatingField_2colrow_col1">
+						<input class="textbox" type="text" name="attr_CharacteristicName" value="Name" style="margin-left: 10px; width: 240px;"/>
+						<button type="roll" title="PowerRoll" name="roll_CharacteristicProficiency" style="margin-left: 15px;" value="&{template:default} {{name=@{CharacterName} - @{CharacteristicName&#125; }} {{Power=[[1d@{CharacteristicProficiency}]]}}"></button>
+						<input class="textbox" type="number" name="attr_CharacteristicProficiency" value="0"/>
+						<button type="roll" title="ControlRoll" name="roll_CharacteristicPower" style="margin-left: 10px;" value="&{template:default} {{name=@{CharacterName} - @{CharacteristicName&#125; }} {{Proficiency=[[1d@{CharacteristicPower}]]}}"></button>
+						<input class="textbox" type="number" name="attr_CharacteristicPower" value="0" style="margin-left: 0px;"/>
 						<input class="textbox" type="number" name="attr_CharacteristicMass" value="0" style="margin-left: 2px;"/>
 						<input class="textbox" type="number" name="attr_CharacteristicLength" value="0"/>
 						<input class="textbox" type="number" name="attr_CharacteristicWidth" value="0" style="margin-left: 2px;"/>
 						<!--Total of values--><input class="textbox" type="number" name="attr_CharacteristicLevel" value="" readonly="readonly"/>
 					</div>
 					<!--Right column-->
-					<div class="sheet-col" style="background-color: #FFE599; width: 492px; margin-left: 0px;">
+					<div class="sheet-col" style="background-color: #FFE599; width: 492px; margin-left: 0px;" id="characteric_repeatingField_2colrow_col2">
 						<input class="textbox" type="number" name="attr_CharacteristicQuantity" value="0" style="margin-left: 9px;"/>
-						<input class="textbox" type="number" name="attr_CharacteristicDamage" value="0" style="margin-left: 17px;"/>
-						<input class="textbox" type="number" name="attr_CharacteristicComplexity" value="0" style="margin-left: 25px;"/>
-						<input class="textbox" type="text" name="attr_CharacteristicPosition" value="Position" style="width: 105px; margin-left: 15px;"/>
-						<input class="textbox" type="text" name="attr_CharacteristicDescription" value="Description"/>
+						<input class="textbox" type="number" name="attr_CharacteristicDamage" value="0" style="margin-left: 12px;"/>
+						<input class="textbox" type="text" name="attr_CharacteristicPosition" value="Position" style="width: 105px;"/>
+						<input class="textbox" type="text" name="attr_CharacteristicDescription" value="Description" style="width: 260px;"/>
+						<input type="hidden" name="attr_CharacteristicQtyLevel"/>
 					</div>
 				</div>
 			</div>
 		</fieldset>
 	</div>
-	<!--End of characteristics table-->
+	<!--End of characteristics section-->
 </div>
 <!--End of character sheet-->
 
@@ -141,7 +138,7 @@
 			var charWidth = parseInt(values.repeating_characteristic_CharacteristicWidth);
 			var levelTotal = '';
 
-			levelTotal = charPower + charProficiency + charControl + charMass + charLength + charWidth;
+			levelTotal = charPower + charProficiency + charMass + charLength + charWidth;
 
 			setAttrs({
 				repeating_characteristic_CharacteristicLevel : levelTotal
@@ -149,10 +146,50 @@
    		});
 	});
 
-	//CurrentLvl value
+	//CharacteristicLevel * Qty
+	on("change:repeating_characteristic", function() {
+		getAttrs(["repeating_characteristic_CharacteristicLevel", "repeating_characteristic_CharacteristicQuantity"], function(values) {
+			var charLevel = parseInt(values.repeating_characteristic_CharacteristicLevel);
+			var charQuantity = parseInt(values.repeating_characteristic_CharacteristicQuantity);
+			var qtyLevel = '';
 
-	on("change:repeating_characteristic remove:repeating_characteristic", function() {
-		repeatingSum("CurrentLvl","characteristic","CharacteristicLevel");
+			qtyLevel = Math.ceil(charLevel * charQuantity);
+
+			setAttrs({
+				repeating_characteristic_CharacteristicQtyLevel : qtyLevel
+			});
+   		});
 	});
+
+	//CurrentLvl value
+	on("change:repeating_characteristic remove:repeating_characteristic", function() {
+		repeatingSum("CurrentLvl","characteristic","CharacteristicQtyLevel");
+	});
+
+	//CurrentMaxPwr value
+	const section_attribute = (section, id, field) => `repeating_${section}_${id}_${field}`;
+	on('change:repeating_characteristic:characteristicpower', (eventInfo) => {
+		getSectionIDs('repeating_characteristic', (idArray) => {
+			const output = {};
+			const fields = [];
+			idArray.forEach((id) => {
+				fields.push(section_attribute('characteristic', id, 'CharacteristicPower'));
+			});
+			getAttrs(fields, (v) => {
+				const characteristicPowerArray = [];
+				let characteristicPowerValue = 0;
+				idArray.forEach((id) => {
+				characteristicPowerValue = +v[section_attribute('characteristic', id, 'CharacteristicPower')] || 0;
+				characteristicPowerArray.push(characteristicPowerValue);
+				});
+				const highestValue = parseInt(Math.max(...characteristicPowerArray));
+				// shows all the values and the highest
+				console.log(`characteristicPowerArray:${characteristicPowerArray} Highest value:${highestValue}`);
+				setAttrs(output, {silent: true});
+				setAttrs({CurrentMaxPwr : highestValue});
+			});
+		});
+	});
+  </script>
 </script>
 <!--End of scripts-->
